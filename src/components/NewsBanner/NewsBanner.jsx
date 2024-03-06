@@ -4,15 +4,15 @@ import { formatTimeAgo } from "../../helpers/formatTimeAgo";
 import Image from "../Image/Image";
 
 const NewsBanner = ({ item }) => {
-    return (
-        <header className={styles.banner}>
-            <Image image={item?.image} />
-            <h3 className={styles.title}>{item.title}</h3>
-            <p className={styles.extra}>
-                {formatTimeAgo(item.published)} by {item.author}
-            </p>
-        </header>
-    );
+  return (
+    <header className={styles.banner}>
+      <Image image={item?.image} />
+      <h3 className={styles.title}>{item.title}</h3>
+      <p className={styles.extra}>
+        {formatTimeAgo(item.published)} by {item.author}
+      </p>
+    </header>
+  );
 };
 
 export default NewsBanner;

@@ -5,7 +5,7 @@ const Skeleton = ({ count = 1, type = "banner" }) => {
   return (
     <>
       {count > 1 ? (
-        <ul className={styles.columnList}>
+        <ul className={styles.rowList}>
           {[...Array(count)].map((_, index) => (
             <li
               key={index}
