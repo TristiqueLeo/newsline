@@ -1,14 +1,16 @@
-import Header from "./components/Header/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./pages/Main/Main";
+import NewsDetails from "./pages/NewsDetails/NewsDetails";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="container">
-        <Main />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        {/* <Route path="/news/:id" element={<NewsDetails />} /> */}
+        <Route path="/news/" element={<NewsDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

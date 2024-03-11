@@ -4,6 +4,7 @@ import { getNews } from "../api/apiNews";
 const useNewsStore = create((set) => ({
   news: [],
   isLoading: true,
+  pageSize: 18,
   keywords: "",
   setKeywords: (keywords) => set({ keywords }),
   fetchNews: async (currentPage, pageSize, keywords) => {

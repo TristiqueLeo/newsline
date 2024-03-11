@@ -6,6 +6,7 @@ import { useDebounce } from "../../helpers/hooks/useDebounce";
 import useNewsStore from "../../store/newsStore";
 import LatestNews from "../../components/LatestNews/LatestNews";
 import usePaginationStore from "../../store/paginationStore";
+import Header from "../../components/Header/Header";
 
 const Main = () => {
   const { news, isLoading, keywords, setKeywords, fetchNews } = useNewsStore();
@@ -25,18 +26,21 @@ const Main = () => {
   }, [currentPage, debouncedKeywords, fetchNews]);
 
   return (
-    <main className={styles.main}>
-      <Search keywords={keywords} setKeywords={setKeywords} />
-      <LatestNews isLoading={isLoading} banners={news} />
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <Header />
+        <Search keywords={keywords} setKeywords={setKeywords} />
+        <LatestNews isLoading={isLoading} banners={news} />
 
-      <Pagination
-        handleNextPage={nextPage}
-        handlePreviousPage={prevPage}
-        handlePageClick={setCurrentPage}
-        totalPages={totalPages}
-        currentPage={currentPage}
-      />
-    </main>
+        <Pagination
+          handleNextPage={nextPage}
+          handlePreviousPage={prevPage}
+          handlePageClick={setCurrentPage}
+          totalPages={totalPages}
+          currentPage={currentPage}
+        />
+      </main>
+    </div>
   );
 };
 

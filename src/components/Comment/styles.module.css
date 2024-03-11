@@ -1,0 +1,60 @@
+.comment {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.reply {
+  margin-left: 20px;
+  border-left: 2px solid #ccc;
+  padding-left: 18px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button,
+.replyButton {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: auto;
+  display: block;
+}
+
+.replyButton {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.commentActions {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,8 +1,13 @@
-# React + Vite
+start project "npm run dev"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Краткое описание что реализовано, что нет:
 
-Currently, two official plugins are available:
++Главная старница реализована в полной мере, работает и поиск и пагинация, также адаптивность тоже имеется.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
++Есть страница комментариев, можно их оставлять и отвечать на них.
+
+-К сожалению детали отдельной новости сделать не получилось. Причина: в апи где я беру новсти нет эндпоинта id, а бэк для этого писать не захотел, костыли писать тоже.
+
+По времени:
+
++Начал во вторник, в праздник и на следющий день я был занят, в сумме ушло 4 дня.
